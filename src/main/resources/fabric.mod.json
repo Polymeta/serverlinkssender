@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "serverlinkssender",
+  "version": "${version}",
+  "name": "ServerLinksSender",
+  "description": "Define custom links to send to clients upon joining!",
+  "authors": [
+    "Polymeta"
+  ],
+  "contact": {
+    "repo": "https://github.com/polymeta/serverlinkssender"
+  },
+  "license": "LGPLv3",
+  "icon": "assets/serverlinkssender/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "io.github.polymeta.serverlinkssender.ServerLinksSender"
+    ]
+  },
+  "mixins": [
+    "serverlinkssender.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
